@@ -57,12 +57,11 @@ OpenCV-Python库功能强大，具有很多图像处理方面的通用算法。�
 数字0-9中，数字5比较特别，因为我们在手写‘5’的时候上面的横可能会和‘5’的身体部分分开，这就容易导致OpenCV在提取轮廓时将一个数字‘5’提取成两个轮廓。
 
 图像的膨胀操作是取每一个位置的矩形领域内值的最大值作为该位置的输出灰度值。不同的是，这里的领域不再单纯是矩形结构的，也可以是椭圆形结构的、十字交叉形结构的等，其中红色是参考点，也称为锚点（anchor point）。
-
-​                                   <img src="C:\Users\FanZ\AppData\Roaming\Typora\typora-user-images\image-20220119164819787.png" alt="image-20220119164819787" style="zoom: 67%;" />
+![image](https://user-images.githubusercontent.com/69685307/150344412-8ffd095a-be79-4be1-b772-e70f4527e248.png)
 
 在OpenCV中，我们可以自定义锚点，实现自定义膨胀效果。小组为限制锚点的范围，将图片压缩成200×200的格式，一方面可以在大致保全数字的情况下简化计算，另一方面可以限制锚点范围不能过大。
 
-<img src="C:\Users\FanZ\AppData\Roaming\Typora\typora-user-images\image-20220119164950005.png" style="zoom:80%;" />
+
 
 #### 4.降噪
 
